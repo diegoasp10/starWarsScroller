@@ -4,4 +4,10 @@ This is a project I did for fun, where I use HTML, CSS and JavaScript, it's abou
 
 I had a lot of fun doing it!
 
+Below is a demonstration of what the intro looks like:
+
 ![Scroller Demostration](assets/images/gifProject.gif)
+
+Diego Andrés Saavedra Pérez.
+Bogotá, Colombia.
+Systems Engineer.
