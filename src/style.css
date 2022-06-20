@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=OpenSans&display=swap");
+
+@font-face {
+    font-family: "Star Jedi";
+    src: url(../fonts/starjedi.ttf) format("truetype");
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    overflow: hidden !important;
+}
+
+.stars {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+.intro {
+    height: 60vh;
+    padding: 0 20px;
+    margin: 100px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: #4BD5EE;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+    opacity: 0;
+    animation: intro 6s ease-out 0.5s;
+}
+
+.intro-text {
+    padding: 30px;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    opacity: 0;
+    animation: logo 10s ease-out 9s;
+    color: #CFB500;
+}
+
+.logo img {
+    width: inherit;
+}
+
+@keyframes logo {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.1);
+    }
+}
+
+p {
+    color: #CFB500;
+}
+
+#scroller {
+    font-family: "Star Jedi", sans-serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-align: justify;
+    overflow: hidden;
+    height: 50em;
+    width: 20em;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    z-index: 0;
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+}
+
+#scroller::after {
+    position: absolute;
+    content: "";
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#content {
+    position: absolute;
+    top: 100%;
+    animation: scroller 100s linear 16s;
+}
+
+@keyframes scroller {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -200%;
+    }
+}
+
+#title, #subtitle {
+    text-align: center;
+    line-height: 1.5rem;
+}
