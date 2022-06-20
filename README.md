@@ -9,5 +9,7 @@ Below is a demonstration of what the intro looks like:
 ![Scroller Demostration](assets/images/gifProject.gif)
 
 Diego Andrés Saavedra Pérez.
+
 Bogotá, Colombia.
+
 Systems Engineer.
